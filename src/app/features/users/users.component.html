@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="flex-column">
+    <app-search-form (searchName)="onSearchName($event)"></app-search-form>
+    <div class="mb-4"></div>
+    <app-user-list [users]="users() | search : searchName()"></app-user-list>
+  </div>
+</div>

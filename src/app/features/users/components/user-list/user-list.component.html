@@ -1,0 +1,7 @@
+<div class="row">
+  @for (user of users(); track user.id) {
+  <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+    <app-card [title]="user.name" [subtitle]="user.email"></app-card>
+  </div>
+  }
+</div>
